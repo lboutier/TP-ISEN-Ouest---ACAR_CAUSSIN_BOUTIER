@@ -8,59 +8,70 @@ html {
   font-family: Open Sans,sans-serif;
 }
 
-/* HEADER */
+/* Conteneur principal du header */
 .header-isen {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
+
+/* Organisation interne */
 .header-container {
-  max-width: 1400px;
+  max-width: 1400px; /* un peu plus large pour aérer */
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+/* Logo */
 .header-logo img {
-  height: 45px;
+  height: 45px; /* logo moins haut */
   width: auto;
 }
+
+/* Navigation */
 .header-nav {
-  background: #e30613;
-  flex: 1;
-  margin-left: 40px;
+  background: #e30613; /* Rouge ISEN */
+  flex: 1; /* occupe toute la largeur dispo */
+  margin-left: 40px; /* espace entre logo et barre rouge */
 }
+
 .header-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* liens espacés sur toute la largeur */
   margin: 0;
   padding: 0;
 }
+
 .header-nav li {
-  flex: 1;
+  flex: 1; /* chaque lien occupe une largeur égale */
   text-align: center;
 }
+
 .header-nav a {
   display: block;
   padding: 14px 10px;
   font-size: 1.2em;
   font-weight: bold;
   color: #fff;
-  text-decoration: none;
   transition: background 0.2s;
+  text-decoration: none;
 }
+
 .header-nav a:hover {
   text-decoration: underline;
 }
 
-/* FOOTER */
 .site-footer {
   background: #000;
   color: #fff;
   padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
 }
+
+/* Conteneur principal */
 .footer-container {
   display: flex;
   max-width: 1200px;
@@ -68,28 +79,88 @@ html {
   gap: 40px;
   flex-wrap: wrap;
 }
+
+/* Colonne 1 : logo + bouton */
 .footer-col-logo {
   flex: 1;
   min-width: 220px;
   display: flex;
   flex-direction: column;
 }
+
 .footer-logo {
   height: 100px;
   margin-bottom: 15px;
   margin-top: 30px;
 }
+
+.btn-contact {
+  display: block;
+  padding: 10px 20px;
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.btn-contact:hover {
+  background: #a00b23;
+}
+
+/* Zone liens (colonnes 2-4) */
 .footer-links-section {
   flex: 3;
   display: flex;
   flex-direction: column;
 }
+
+/* Titre général */
 .footer-cities {
   font-size: 40px;
   font-weight: 700;
   text-align: left;
   margin-bottom: 20px;
 }
+
+/* Colonnes de liens */
+.footer-links-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+	width: 25%
+}
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Bas de page */
 .footer-bottom {
   text-align: center;
   padding-top: 15px;
@@ -98,8 +169,60 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+/* TEXT_IMG */
+.block-devenir {
+  background: #fff;
+  padding: 60px 20px;
+}
 
-/* IMAGES (dp-section) */
+/* Conteneur global */
+.block-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Titre en haut */
+.block-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Deux colonnes */
+.block-columns-img {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Colonne texte */
+.block-text {
+  flex: 1;
+  padding-left: 5%;
+}
+
+.block-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Colonne image */
+.block-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.block-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+/* IMAGES */
 .dp-section {
   max-width: 1200px;
   margin: 40px auto;
@@ -122,8 +245,8 @@ html {
   overflow: hidden;
   background: #fff;
   transition: transform 0.2s ease;
-  position: relative;
-  padding: 3px 3px 0;
+padding: 3px 3px 0;
+position: relative;
 }
 .dp-card:hover {
   transform: translateY(-5px);
@@ -135,69 +258,75 @@ html {
   display: block;
 }
 .dp-card p {
-  padding: 1px 0.5em;
+padding: 1px 0.5em;
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  position: absolute;
+  position: relative;
+background-color: #05819d;
+color: white;
+font-weight: bold;
+display: inline;
+position: absolute;
   bottom: 1em;
   left: 0;
-  background-color: #05819d;
-  color: white;
+  margin: 0;
+}
+/* BLOCKS */
+/* Conteneur global */
+.block-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Deux colonnes */
+.block-columns {
+	display: flex;
+	gap: 40px;
+	align-items: normal;
 }
 
-/* BLOCKS */
-.block-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.block-columns {
-  display: flex;
-  gap: 40px;
-  align-items: normal;
-}
 .block-alternance {
-  margin: 40px auto;
-  border: 2px solid #c8102e;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	margin: 40px auto;
+	border: 2px solid #c8102e;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .block-alternance img {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 .block-alternance-content {
-  padding: 24px 30px;
+	padding: 24px 30px;
 }
 .block-alternance-content h2 {
-  font-size: 200%;
-  margin-top: 0;
-  margin-bottom: 16px;
+	font-size: 200%;
+	margin-top: 0;
+	margin-bottom: 16px;
 }
 .block-alternance-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: 16px;
 }
 .block-button {
-  margin: auto;
-  text-align: center;
+	margin: auto;
+	text-align: center;
 }
 .block-button a {
-  background-color: #e30613;
-  color: #fff;
-  display: inline-block;
-  padding: .5rem 2rem;
-  border-radius: 3.45rem;
-  font-weight: 700;
-  text-decoration: none;
+	background-color: #e30613;
+	color: #fff;
+	display: inline-block;
+	padding: .5rem 2rem;
+	border-radius: 3.45rem;
+	font-weight: 700;
+	text-decoration: none;
 }
 .block-button a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
   </style>
 </head>
@@ -219,65 +348,54 @@ html {
 
 <!-- DOMAINES PROFESSIONNELS (IMAGES) -->
 <section class="dp-section">
-  <h2>Domaines professionnels</h2>
-  <div class="dp-grid">
-    <div class="dp-card">
-      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cyber sécurité"></a>
+  <h2>Nos formations ingénieurs</h2>
+    <div class="dp-grid">
+      <div class="dp-card">
+      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="CyberSécurité"></a>
     </div>
     <div class="dp-card">
       <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel"></a>
     </div>
     <div class="dp-card">
-      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle"></a>
-    </div>
-    <div class="dp-card">
-      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Autre domaine"></a>
-    </div>
-    <div class="dp-card">
-      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Autre domaine"></a>
+      <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png  " alt="Intelligence artificielle"></a>
     </div>
   </div>
 </section>
 
 <!-- BLOCS ALTERNANCE -->
 <div class="block-container">
-  <div class="block-columns">
-    <section class="block-alternance">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
-      <div class="block-alternance-content">
-        <h2>Titre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh et sollicitudin porttitor. Vivamus facilisis elit non leo luctus efficitur.</p>
-        <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat. Suspendisse lacinia sed mauris eu feugiat.</p>
-        <div class="block-button">
-          <a href="ACOMPLETER">Lien</a>
-        </div>
-      </div>
-    </section>
+  <div class="block-columns">    
+	<section class="block-alternance">
+		<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Alternance ISEN Ouest">
+		<div class="block-alternance-content">
+		<h2>Formations post-bac</h2>
+			
+			<p>
+			Chaque étudiant construit son propre parcours de formation sur 5 ans. 
+			</p>
+			<p>
+                        Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.      
+                        </p>
 
-    <section class="block-alternance">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
-      <div class="block-alternance-content">
-        <h2>Titre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh et sollicitudin porttitor. Vivamus facilisis elit non leo luctus efficitur.</p>
-        <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat. Suspendisse lacinia sed mauris eu feugiat.</p>
-        <div class="block-button">
-          <a href="ACOMPLETER">Lien</a>
-        </div>
-      </div>
-    </section>
+			<div class="block-button">
+				<a href="https://www.isen.fr/formation/formation-post-bac/">Découvrez nos 7 cycles post-bac</a>
+			</div>
+		</div>
+	</section>
 
-    <section class="block-alternance">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
-      <div class="block-alternance-content">
-        <h2>Titre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh et sollicitudin porttitor. Vivamus facilisis elit non leo luctus efficitur.</p>
-        <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat. Suspendisse lacinia sed mauris eu feugiat.</p>
-        <div class="block-button">
-          <a href="ACOMPLETER">Lien</a>
-        </div>
-      </div>
-    </section>
-  </div>
+	<section class="block-alternance">
+		<img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Alternance ISEN Ouest">
+		<div class="block-alternance-content">
+		<h2>Devenir ingénieur par alternance</h2>
+			<p>
+			Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.
+			</p>
+			<div class="block-button">
+				<a href="https://www.isen.fr/formation/apprentissage/">Formation d'ingénieurs sous statut apprenti</a>
+			</div>
+		</div>
+	</section>
+
 </div>
 
 <!-- FOOTER -->
